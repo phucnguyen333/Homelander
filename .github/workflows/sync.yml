@@ -1,0 +1,33 @@
+name: Sync Fork   # Tên workflow, sẽ hiện trong tab Actions
+
+# Khi nào chạy workflow
+on:
+  schedule:
+    - cron: '0 0 * * *' # cron job: chạy tự động mỗi ngày lúc 00:00 UTC
+  workflow_dispatch:     # cho phép bạn vào tab Actions bấm "Run workflow" để chạy tay
+
+jobs:
+  sync:                 # Đặt tên job là "sync"
+    runs-on: ubuntu-latest   # Chạy trên máy ảo Ubuntu do GitHub cung cấp
+
+    steps:              # Các bước cần làm
+      - name: Checkout fork
+        uses: actions/checkout@v4   # Lấy code fork của bạn về máy ảo
+        with:
+          fetch-depth: 0            # Lấy toàn bộ lịch sử git (cần để merge/rebase)
+
+      - name: Set up Git identity
+        run: |                      # Config thông tin người commit
+          git config user.name "github-actions[bot]"   # tên người commit
+          git config user.email "github-actions[bot]@users.noreply.github.com" # email người commit
+
+      - name: Add upstream remote
+        run: |                      # Thêm remote "upstream" (repo gốc mà bạn fork từ đó)
+          git remote add upstream https://github.com/Dat2784/Homelander.git
+          git fetch upstream        # Lấy code mới nhất từ repo gốc về
+
+      - name: Sync main branch
+        run: |                      # Đồng bộ nhánh main
+          git checkout main         # Chuyển sang nhánh main của fork
+          git merge upstream/main || true   # Merge code từ repo gốc vào fork
+          git push origin main      # Push code đã merge lên repo fork của bạn
