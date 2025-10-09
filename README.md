@@ -12,9 +12,9 @@ Chúng tôi hoan nghênh mọi đóng góp! Để tham gia phát triển dự á
    - Nhấn nút **Fork** ở góc trên bên phải của trang repo.  
    - Chọn tài khoản GitHub của bạn để tạo một bản sao (fork).  
    - Sau khi fork, bạn sẽ có một repo riêng trên tài khoản của mình, độc lập với repo gốc. 
-2. **Clone fork** về máy:
+2. **Clone fork** về máy:(thay "your-username" bằng tên GitHub của bạn)
    ```bash
-   git clone https://github.com/Dat2784/Homelander.git
+   git clone https://github.com/your-username/Homelander.git
    cd Homelander
    ```
 
