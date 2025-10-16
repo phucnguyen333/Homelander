@@ -1,0 +1,180 @@
+🔹 Thông tin về các cột trong AmesHousing.csv
+1. ID và thông tin chung
+
+Order → Thứ tự bản ghi.
+
+PID → Mã bất động sản (Parcel ID).
+
+MS SubClass → Loại nhà (mã số, ví dụ 20 = 1-story 1946+, 60 = 2-story 1946+).
+
+MS Zoning → Quy hoạch đất (RL = Residential Low Density, RM = Residential Medium Density...).
+
+2. Thông tin lô đất
+
+Lot Frontage → Chiều dài mặt tiền lô đất (feet).
+
+Lot Area → Diện tích lô đất (sq ft).
+
+Street → Loại đường (Pave = nhựa, Grvl = sỏi).
+
+Alley → Ngõ hẻm (Grvl, Pave, NA = không có).
+
+Lot Shape → Hình dạng lô đất (Reg = vuông vắn, IR1/IR2/IR3 = méo).
+
+Land Contour → Địa hình (Lvl = bằng phẳng, HLS = dốc, Low = trũng).
+
+Utilities → Tiện ích có sẵn (AllPub = điện/nước/ga, ELO = điện duy nhất...).
+
+Lot Config → Vị trí lô đất (Inside, Corner, CulDSac...).
+
+Land Slope → Độ dốc đất (Gtl = nhẹ, Mod = vừa, Sev = dốc nhiều).
+
+3. Khu vực xung quanh
+
+Neighborhood → Tên khu dân cư (CollgCr, Veenker, Crawfor, ...).
+
+Condition 1 / Condition 2 → Điều kiện tiếp giáp (gần đường, đường sắt, công viên...).
+
+4. Thông tin tòa nhà
+
+Bldg Type → Kiểu nhà (1Fam = nhà riêng, Twnhs = townhouse...).
+
+House Style → Kiểu thiết kế (1Story, 2Story, Split...).
+
+Overall Qual → Đánh giá chất lượng tổng thể (1–10).
+
+Overall Cond → Đánh giá tình trạng tổng thể (1–10).
+
+Year Built → Năm xây dựng.
+
+Year Remod/Add → Năm sửa chữa / cải tạo.
+
+5. Thông tin mái & vật liệu bên ngoài
+
+Roof Style → Kiểu mái (Gable, Hip...).
+
+Roof Matl → Vật liệu mái.
+
+Exterior 1st / Exterior 2nd → Vật liệu tường ngoài.
+
+Mas Vnr Type → Loại ốp tường (BrkFace, Stone, None...).
+
+Mas Vnr Area → Diện tích ốp tường (sq ft).
+
+Exter Qual → Chất lượng bên ngoài (Ex, Gd, TA, Fa, Po).
+
+Exter Cond → Tình trạng bên ngoài.
+
+6. Tầng hầm
+
+Foundation → Loại móng (PConc, Slab...).
+
+Bsmt Qual → Chất lượng hầm (Ex, Gd, TA, Fa, NA).
+
+Bsmt Cond → Tình trạng hầm.
+
+Bsmt Exposure → Số cửa sổ hầm.
+
+BsmtFin Type 1 / 2 → Loại hoàn thiện hầm.
+
+BsmtFin SF 1 / 2 → Diện tích hầm đã hoàn thiện (sq ft).
+
+Bsmt Unf SF → Diện tích hầm chưa hoàn thiện.
+
+Total Bsmt SF → Tổng diện tích hầm.
+
+7. Hệ thống tiện ích
+
+Heating → Loại sưởi.
+
+Heating QC → Chất lượng hệ thống sưởi.
+
+Central Air → Có điều hòa trung tâm không (Y/N).
+
+Electrical → Hệ thống điện.
+
+8. Diện tích sàn
+
+1st Flr SF → Diện tích tầng 1.
+
+2nd Flr SF → Diện tích tầng 2.
+
+Low Qual Fin SF → Diện tích sàn kém chất lượng.
+
+Gr Liv Area → Diện tích sinh hoạt trên mặt đất.
+
+9. Phòng & tiện ích
+
+Bsmt Full Bath → Số phòng tắm đầy đủ ở hầm.
+
+Bsmt Half Bath → Số phòng tắm nhỏ ở hầm.
+
+Full Bath → Phòng tắm đầy đủ trên mặt đất.
+
+Half Bath → Phòng tắm nhỏ trên mặt đất.
+
+Bedroom AbvGr → Số phòng ngủ (trên mặt đất).
+
+Kitchen AbvGr → Số bếp.
+
+Kitchen Qual → Chất lượng bếp.
+
+TotRms AbvGrd → Tổng số phòng trên mặt đất.
+
+Functional → Mức độ đầy đủ công năng (Typ = bình thường, Min = thiếu ít...).
+
+10. Lò sưởi & gara
+
+Fireplaces → Số lò sưởi.
+
+Fireplace Qu → Chất lượng lò sưởi.
+
+Garage Type → Kiểu gara (Attchd, Detchd, BuiltIn...).
+
+Garage Yr Blt → Năm xây gara.
+
+Garage Finish → Mức độ hoàn thiện gara.
+
+Garage Cars → Sức chứa gara (số xe).
+
+Garage Area → Diện tích gara (sq ft).
+
+Garage Qual → Chất lượng gara.
+
+Garage Cond → Tình trạng gara.
+
+11. Ngoại thất & tiện ích ngoài trời
+
+Paved Drive → Đường lái xe (Y, N, P).
+
+Wood Deck SF → Diện tích sân gỗ.
+
+Open Porch SF → Diện tích hiên mở.
+
+Enclosed Porch → Diện tích hiên kín.
+
+3Ssn Porch → Diện tích hiên 3 mùa.
+
+Screen Porch → Diện tích hiên có lưới chắn.
+
+Pool Area → Diện tích hồ bơi.
+
+Pool QC → Chất lượng hồ bơi.
+
+Fence → Loại hàng rào.
+
+Misc Feature → Tính năng khác (shed, elevator, etc.).
+
+Misc Val → Giá trị tính năng khác.
+
+12. Thời gian & giá bán
+
+Mo Sold → Tháng bán.
+
+Yr Sold → Năm bán.
+
+Sale Type → Loại giao dịch (WD = Warranty Deed, COD = Cash...).
+
+Sale Condition → Điều kiện bán (Normal, Abnorml, Partial...).
+
+SalePrice → Giá bán (USD) (biến mục tiêu thường dùng để dự đoán).
