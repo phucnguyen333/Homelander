@@ -1,0 +1,14 @@
+🧩 1. Chọn các yếu tố cần khai thác từ CSV
+✅ Biến mục tiêu (Target):
+
+SalePrice
+
+✅ Biến đặc trưng (Features) nên sử dụng:
+Nhóm	Các thuộc tính quan trọng	Ghi chú
+🏠 Chất lượng & điều kiện nhà	OverallQual, OverallCond, YearBuilt, YearRemodAdd	Ảnh hưởng trực tiếp đến giá
+📏 Diện tích & không gian	GrLivArea, TotalBsmtSF, 1stFlrSF, GarageArea	Diện tích càng lớn, giá càng cao
+🚪 Phòng & công năng	FullBath, BedroomAbvGr, TotRmsAbvGrd, KitchenQual	Phản ánh mức tiện nghi
+🚗 Gara & tiện ích ngoài trời	GarageCars, GarageFinish, Fireplaces, PoolArea	Giá trị cộng thêm
+🌳 Khu vực & đất đai	Neighborhood, LotArea, LotFrontage	Ảnh hưởng theo vị trí
+⏱️ Thời gian bán	YrSold, MoSold	Phản ánh biến động thị trường
+💸 Điều kiện bán	SaleType, SaleCondition	Loại giao dịch khác nhau → chênh lệch giá
